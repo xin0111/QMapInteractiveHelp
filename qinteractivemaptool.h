@@ -99,7 +99,7 @@ class QMAPINTERACTIVE_EXPORT QInteractiveMapTool : public QObject
     //! make action and/or button active
     virtual void activate();
 
-    //! make action and/or button active deactivated(ʹ��Ч)
+    //! make action and/or button active deactivated(使无效)
     virtual void deactivate();
 
     //! convenient method to clean members
@@ -125,8 +125,6 @@ class QMAPINTERACTIVE_EXPORT QInteractiveMapTool : public QObject
     void actionDestroyed();
 
   protected:
-
-	  public:
 
     QInteractiveMapTool(QWidget* viewport, QInteractiveManager *iManager );
 
