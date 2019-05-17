@@ -9,6 +9,7 @@
 
 QInteractiveManager::QInteractiveManager(QWidget* viewport)
 	:QObject(viewport),
+	mViewport(viewport),
 	mMapTool(nullptr),
 	mLastNonZoomMapTool(nullptr)
 {
